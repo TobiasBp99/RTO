@@ -16,7 +16,7 @@ python3 main.py
 ```
 
 ## Autores ✒️
-* **Tobias Bavasso Piizzi** - *Trabajo Inicial* - [villanuevand](https://github.com/TobiasBp99)
+* **Tobias Bavasso Piizzi** - *Trabajo Inicial* - [TobiasBp99](https://github.com/TobiasBp99)
 
 
 ## Expresiones de Gratitud 🎁
