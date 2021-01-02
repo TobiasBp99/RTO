@@ -250,17 +250,17 @@ def GetUsername():
     return(input("Username\t:"))
 
 def GetDateFrom():
-    print("Inicio")
-    d = int(input("Dia\t:"))
-    m = int(input("Mes\t:"))
-    y = int(input("anio\t:"))
+    print("\nInicio")
+    d = int(input("Dia\t\t:"))
+    m = int(input("Mes\t\t:"))
+    y = int(input("año\t\t:"))
     return( d , m , y)
 
 def GetDateTo():
-    print("Fin")
-    d = int(input("Dia\t:"))
-    m = int(input("Mes\t:"))
-    y = int(input("anio\t:"))
+    print("\nFin")
+    d = int(input("Dia\t\t:"))
+    m = int(input("Mes\t\t:"))
+    y = int(input("año\t\t:"))
     return( d , m , y)
 
 def FormatDate(d,m,y):
