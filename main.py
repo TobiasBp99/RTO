@@ -72,7 +72,7 @@ def main():
     fecha_to = datetime.strptime(s_to, '%d/%m/%Y')
     #--------------------------------------------------------------#
     SetDate(browser, fecha_from)
-    #Leo head
+    #Leo head, creo que no sirve para nada
     while flag_exc_hea == 0:
         try:
             s_head = browser.find_element_by_xpath(xpath_header.replace("/th["+'1'+']',"/th["+str(i+1)+']')).text
@@ -80,6 +80,8 @@ def main():
             i += 1
         except:
             flag_exc_hea = 1
+    
+        
     
     while fecha_from != fecha_to:
         flag_exc_col = 0
@@ -205,7 +207,7 @@ def main():
     
         
     
-    data = {"Fecha":l_fecha,"Tiempo Trabajado":l_trabajo,l_head[0]:l_inicio,"Resultados":l_resultado,l_head[2]:l_fin,l_head[3]:l_tipo,l_head[4]:l_uso,l_head[5]:l_categoria,l_head[6]:l_planilla,l_head[7]:l_certificado,l_head[8]:l_vence,l_head[9]:l_dominio,l_head[10]:l_res,l_head[11]:l_cuit,l_head[12]:l_razon,l_head[13]:l_linea}
+    data = {"Fecha":l_fecha,"Tiempo Trabajado":l_trabajo,"Inicio":l_inicio,"Resultados":l_resultado,"Fin":l_fin,"Tipo":l_tipo,"Uso":l_uso,"Categoria":l_categoria,"Planilla":l_planilla,"Certificado":l_certificado,"Vencimiento":l_vence,"Dominio":l_dominio,"Resultado":l_res,"CUIT":l_cuit,"Razón Social":l_razon,"Línea":l_linea}
     df = pd.DataFrame(data)
     
 
